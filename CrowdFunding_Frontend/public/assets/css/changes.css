@@ -1,0 +1,90 @@
+/* ===== ADMIN TABLE ===== */
+
+.admin-table {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.admin-table table thead {
+  background: #f8f9fa;
+}
+
+.admin-table th {
+  font-weight: 600;
+  font-size: 14px;
+  color: #555;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.admin-table td {
+  font-size: 14px;
+  color: #333;
+}
+
+.admin-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+/* Video preview */
+.table-video {
+  width: 70px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+
+/* Status badges */
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status-badge.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status-badge.approved {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status-badge.rejected {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.status-badge.funded {
+  background: #cce5ff;
+  color: #004085;
+}
+/* Logo-style image with name */
+.table-user {
+  min-width: 160px;
+}
+
+.table-logo {
+  width: 28px;       /* small like logo */
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+}
+
+/* Keep name neat */
+.table-user span {
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.temp-color{
+  background-color: #d4a762;
+}

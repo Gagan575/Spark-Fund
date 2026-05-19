@@ -1,0 +1,97 @@
+/* sanity check */
+
+
+
+/* ===== MOBILE NAV DRAWER (BULLETPROOF) ===== */
+@media (max-width: 1199px) {
+
+  /* Nav drawer */
+  .navmenu {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    width: 75%;
+    height: calc(100vh - 100px);
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px 0 0 16px;
+    transition: right 0.3s ease-in-out;
+    z-index: 9999;
+    overflow-y: auto;
+  }
+
+  .navmenu.active {
+    right: 0;
+  }
+
+  .navmenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0; /* reset gap, we control spacing with padding */
+  }
+
+  .spanfont{
+    font-weight: 900;
+    margin-right:20px
+  }
+
+  /* Top-level links and dropdown toggles */
+  .navmenu ul li > a,
+  .navmenu .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    font-size: 18px;
+    font-weight: 700 !important; /* force bold */
+    color: #000;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+
+  /* Dropdown arrow */
+  .navmenu .toggle-dropdown {
+    font-size: 14px;
+    margin-left: 12px;
+    transition: transform 0.3s ease;
+  }
+
+  .navmenu .dropdown.dropdown-active .toggle-dropdown {
+    transform: rotate(180deg);
+  }
+
+  /* Submenu */
+  .navmenu .dropdown ul {
+    display: none;
+    flex-direction: column;
+    padding-left: 24px;
+    margin: 6px 0;
+  }
+
+  .navmenu .dropdown.dropdown-active ul {
+    display: flex; /* make sure flex is applied */
+  }
+
+  .navmenu .dropdown ul li a {
+    font-size: 16px;
+    font-weight: 700 !important; /* force bold */
+    color: #444;
+    padding: 10px 0;
+    display: block; /* ensures full width clickable */
+    text-decoration: none;
+  }
+
+  /* Mobile toggle button */
+  .mobile-nav-toggle {
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 10000;
+  }
+}
+
+li::marker {
+  content: none;
+}

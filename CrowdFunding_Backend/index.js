@@ -33,6 +33,10 @@ const chatRoutes = require("./server/routes/ChatRoutes");
 app.use("/chat", chatRoutes);
 
 
+app.get("/",(req,res)=>{
+    res.send("Hello World")
+})
+
 // Create HTTP server
 const server = http.createServer(app);
 
